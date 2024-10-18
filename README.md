@@ -1,3 +1,11 @@
+
+![search_username](https://github.com/user-attachments/assets/b84a416f-07d5-488a-8257-f343541618bf)
+![search_and_filter_repository](https://github.com/user-attachments/assets/fa096320-5c32-45dd-bb4e-3e5d477cbb07)
+![repo_list](https://github.com/user-attachments/assets/6fd8ca91-96d0-4d47-8963-3b67a0f4fbd3)
+![repo_filter_rust](https://github.com/user-attachments/assets/1bce7d91-29eb-49b6-96af-9a6f7c8fcffa)
+![repo_filter_javascript](https://github.com/user-attachments/assets/2b30b707-d09d-414c-a2eb-5a9d69fb5d23)
+![repo_detail](https://github.com/user-attachments/assets/c62df373-3943-4736-8283-10cae0f2d308)
+
 # GitHub Repositories Explorer
 
 An Android application that allows users to explore GitHub repositories for a given user.
@@ -53,5 +61,6 @@ The app displays repository details such as avatar, name, description, language,
 
 1. Clone the repository:
 
-```bash
+```bash![Uploading repo_detail.png…]()
+
 git clone https://github.com/your-username/your-repository-name.git
