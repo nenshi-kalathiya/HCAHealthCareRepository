@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default value -->
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="hundred_dp">100dp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="twenty_five_dp">25dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+
+    <!-- Default Margins and Paddings -->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+    <dimen name="margin_xxlarge">32dp</dimen>
+
+    <!-- Default Padding Values -->
+    <dimen name="padding_extra_small">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_xlarge">24dp</dimen>
+    <dimen name="padding_xxlarge">32dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_xxlarge">20sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_heading">32sp</dimen>
+    <dimen name="text_size_display">40sp</dimen>
+
+    <!-- Icon Sizes -->
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_xlarge">48dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+    <dimen name="elevation_extra_large">10dp</dimen>
+
+    <!-- Corner Radius for Cards or Buttons -->
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="corner_radius_medium">8dp</dimen>
+    <dimen name="corner_radius_large">16dp</dimen>
+
+    <!-- Button Heights and Widths -->
+    <dimen name="button_height_small">36dp</dimen>
+    <dimen name="button_height_medium">48dp</dimen>
+    <dimen name="button_height_large">56dp</dimen>
+    <dimen name="button_width_small">88dp</dimen>
+    <dimen name="button_width_medium">120dp</dimen>
+    <dimen name="button_width_large">160dp</dimen>
+
+    <!-- General Spacing -->
+    <dimen name="spacing_tiny">2dp</dimen>
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">24dp</dimen>
+    <dimen name="spacing_xxlarge">32dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!-- List Item Height -->
+    <dimen name="list_item_height_small">48dp</dimen>
+    <dimen name="list_item_height_medium">72dp</dimen>
+    <dimen name="list_item_height_large">88dp</dimen>
+
+    <!-- Divider Sizes -->
+    <dimen name="divider_height_small">1dp</dimen>
+    <dimen name="divider_height_medium">2dp</dimen>
+    <dimen name="divider_height_large">4dp</dimen>
+</resources>

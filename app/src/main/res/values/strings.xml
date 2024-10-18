@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HCAHealthCareTask</string>
+    <string name="enter_github_username">Enter GitHub Username Here</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="repository_description">Repository Description</string>
+    <string name="repository_name">Repository Name</string>
+    <string name="language">Language</string>
+    <string name="stars">Stars</string>
+    <string name="forks">Forks</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="search_hint">Enter Username Here</string>
+    <string name="clear_icon">Clear Search</string>
+
+    <string-array name="programming_languages">
+            <item>All</item>
+            <item>Kotlin</item>
+            <item>Java</item>
+            <item>Python</item>
+            <item>JavaScript</item>
+            <item>R</item>
+            <item>Swift</item>
+            <item>Rust</item>
+            <item>C#</item>
+            <item>Go</item>
+            <item>HTML</item>
+            <item>PHP</item>
+            <item>TypeScript</item>
+        </string-array>
+</resources>
