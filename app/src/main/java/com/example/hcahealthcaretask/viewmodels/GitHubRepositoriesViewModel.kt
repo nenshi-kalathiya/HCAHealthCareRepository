@@ -10,23 +10,24 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable
 
 class GitHubRepositoriesViewModel(private val repository: GitHubRepository) : ViewModel() {
 
+    //set and update repository list according response
     private val _repositories = MutableLiveData<List<RepositoryDataItem>>()
     val repositories: LiveData<List<RepositoryDataItem>> get() = _repositories
 
+    //set and update repository list according filter by language
     private val _filteredRepositories = MutableLiveData<List<RepositoryDataItem>>()
     val filteredRepositories: LiveData<List<RepositoryDataItem>> get() = _filteredRepositories
 
+    //error handling for No API Call Response
     private val _error = MutableLiveData<String?>()
     val error: LiveData<String?> get() = _error
 
     private val compositeDisposable = CompositeDisposable()
 
-
     private var allRepositories: List<RepositoryDataItem> = emptyList()
     var currentPage = 1
     var isLastPage = false
     var isLoading = false
-
 
     fun fetchRepositories(userName: String = "google", isNewSearch : Boolean) {
         // Avoid multiple calls while loading or if it's the last page
@@ -58,7 +59,6 @@ class GitHubRepositoriesViewModel(private val repository: GitHubRepository) : Vi
             })
         compositeDisposable.add(disposable)
     }
-
 
     // Filter repositories by language
     fun filterRepositories(language: String) {

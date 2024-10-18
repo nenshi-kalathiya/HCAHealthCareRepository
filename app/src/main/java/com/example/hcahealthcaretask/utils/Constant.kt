@@ -16,5 +16,6 @@ object Constants {
         const val ERROR_MSG = "Something Went Wrong !!. Please Try Again Later !!"
         const val NO_DATA_MSG = "No Data Found !!. Please Try To Search Different UserName !!"
         const val NO_DATA_LANG = "No Data Found !!. Please Try To Search Different Language !!"
+        const val DEFAULT_USERNAME = "google"
 
 }

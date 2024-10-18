@@ -2,7 +2,6 @@ package com.example.hcahealthcaretask.application
 
 import android.app.Application
 import com.example.hcahealthcaretask.component.ApplicationComponent
-import dagger.android.DaggerApplication
 
 class GithubApplication : Application(){
 

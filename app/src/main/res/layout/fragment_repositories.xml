@@ -49,13 +49,15 @@
             android:id="@+id/textError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_title"
-            android:visibility="gone"
             android:gravity="center"
             android:padding="@dimen/padding_xxlarge"
+            android:textSize="@dimen/text_size_title"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

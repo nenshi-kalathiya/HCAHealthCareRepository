@@ -18,7 +18,6 @@ class CustomSearchBar @JvmOverloads constructor(
 
     private var binding: ViewSearchBarBinding
 
-
     var onSearchListener: ((String) -> Unit)? = null
     var onClearListener: (() -> Unit)? = null
 
@@ -59,25 +58,26 @@ class CustomSearchBar @JvmOverloads constructor(
         }
     }
 
-    // Public method to set text programmatically
+    //  method to set text programmatically
     fun setText(text: String) {
         binding.searchEditText.setText(text)
     }
 
-    // Public method to get text
+    //  method to get text
     fun getText(): String {
         return binding.searchEditText.text.toString()
     }
 
-    // Public method to set hint programmatically
+    //  method to set hint programmatically
     fun setHint(hint: String) {
         binding.searchEditText.hint = hint
     }
 
-    // Expose a method to allow fragment to add its own TextWatcher
+    //  method to allow fragment to add its own TextWatcher
     fun addTextChangedListener(textWatcher: TextWatcher) {
         binding.searchEditText.addTextChangedListener(textWatcher)
     }
 
+    //pass edit search text for listen to API call
     fun textEditSearch() : String = binding.searchEditText.text.toString()
 }

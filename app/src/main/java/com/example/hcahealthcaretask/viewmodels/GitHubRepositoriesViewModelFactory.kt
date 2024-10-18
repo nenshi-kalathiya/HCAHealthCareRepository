@@ -5,16 +5,17 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.hcahealthcaretask.repository.GitHubRepository
 import javax.inject.Inject
 
-//class GitHubRepositoriesViewModelFactory @Inject constructor(
-//    private val repository: GitHubRepository
-//) : ViewModelProvider.Factory {
-//    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-//        if (modelClass.isAssignableFrom(GitHubRepositoriesViewModel::class.java)) {
-//            return GitHubRepositoriesViewModel(repository) as T
-//        }
-//        throw IllegalArgumentException("Unknown ViewModel class")
-//    }
-//}
+// UseFull while use Dagger
+/*class GitHubRepositoriesViewModelFactory @Inject constructor(
+    private val repository: GitHubRepository
+) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(GitHubRepositoriesViewModel::class.java)) {
+            return GitHubRepositoriesViewModel(repository) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
+    }
+}*/
 
 class GitHubRepositoriesViewModelFactory constructor(private val repository: GitHubRepository): ViewModelProvider.Factory {
 

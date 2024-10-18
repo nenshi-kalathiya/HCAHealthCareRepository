@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.navArgs
 import com.example.hcahealthcaretask.R
 import com.example.hcahealthcaretask.databinding.FragmentRepositoryDetailBinding
 import com.example.hcahealthcaretask.model.RepositoryDataItem
@@ -56,6 +55,7 @@ class GitHubRepositoryDetailFragment : Fragment() {
         return Gson().fromJson(repositoryString, RepositoryDataItem::class.java)
     }
 
+    //set details manually from repository item
     private fun setDataToView(repository: RepositoryDataItem){
         Picasso.get()
             .load(repository.owner.avatar_url)

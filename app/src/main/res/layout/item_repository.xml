@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="repository"
             type="com.example.hcahealthcaretask.model.RepositoryDataItem" />
@@ -18,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:elevation="@dimen/elevation_extra_large"
+            android:elevation="@dimen/elevation_xxlarge"
             android:padding="@dimen/margin_medium"
             tools:ignore="MissingConstraints">
 
@@ -78,7 +77,9 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
 
 

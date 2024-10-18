@@ -3,7 +3,6 @@ package com.example.hcahealthcaretask.view.fragments
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import androidx.fragment.app.Fragment
@@ -47,7 +46,7 @@ class GitHubRepositoriesFragment : Fragment(R.layout.fragment_repositories) {
         seterror()
 
         // fetch initial data
-        viewModel.fetchRepositories("google", true)
+        viewModel.fetchRepositories(Constants.DEFAULT_USERNAME , true)
 
         searchRepository()
         paginationOfRepositories()
@@ -82,25 +81,20 @@ class GitHubRepositoriesFragment : Fragment(R.layout.fragment_repositories) {
         //set adapter to recyclerview
         binding.repositoriesRecyclerView.adapter = adapter
 
-        //set adapter to recyclerview
+        //set layoutManager to recyclerview
         layoutManager = LinearLayoutManager(requireContext())
         binding.repositoriesRecyclerView.layoutManager = layoutManager
         binding.repositoriesRecyclerView.adapter = adapter
 
         //handle data  found or not and update ui accordingly
         viewModel.repositories.observe(viewLifecycleOwner) { repositories ->
-            checkRepositoryValue(repositories, Constants.NO_DATA_MSG)
+            checkRepoListIsEmptyOrNot(repositories, Constants.NO_DATA_MSG)
         }
 
         // Observe filtered repositories
         viewModel.filteredRepositories.observe(viewLifecycleOwner, Observer { repositories ->
-            Log.e("Nenshi", "later filter : ${repositories.size}")
-            checkRepositoryValue(repositories, Constants.NO_DATA_LANG)
+            checkRepoListIsEmptyOrNot(repositories, Constants.NO_DATA_LANG)
         })
-
-//        viewModel.loading.observe(viewLifecycleOwner, Observer { isLoading ->
-//            binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
-//        })
     }
 
     private fun searchRepository() {
@@ -116,7 +110,7 @@ class GitHubRepositoriesFragment : Fragment(R.layout.fragment_repositories) {
                 if (username.isNotEmpty()) {
                     viewModel.fetchRepositories(username, true) // Call the API on text change
                 } else {
-                    viewModel.fetchRepositories("google", true)
+                    viewModel.fetchRepositories(Constants.DEFAULT_USERNAME , true)
                 }
             }
 
@@ -143,7 +137,7 @@ class GitHubRepositoriesFragment : Fragment(R.layout.fragment_repositories) {
                             if (binding.searchBar.textEditSearch().isNotEmpty()) {
                                 viewModel.fetchRepositories(binding.searchBar.textEditSearch(), false)
                             } else {
-                                viewModel.fetchRepositories("google" , false)
+                                viewModel.fetchRepositories(Constants.DEFAULT_USERNAME , false)
                             }
                         }
                     }
@@ -181,7 +175,7 @@ class GitHubRepositoriesFragment : Fragment(R.layout.fragment_repositories) {
             }
     }
 
-    fun checkRepositoryValue(repositories: List<RepositoryDataItem>, message: String) {
+    fun checkRepoListIsEmptyOrNot(repositories: List<RepositoryDataItem>, message: String) {
         if (repositories.isEmpty()) {
             binding.repositoriesRecyclerView.visibility = View.GONE
             binding.textError.visibility = View.VISIBLE

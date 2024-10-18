@@ -5,7 +5,7 @@ import com.example.hcahealthcaretask.service.GitHubApiService
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
-import javax.inject.Inject
+
 //useful while you are integrating Dagger
 //class GitHubRepository @Inject constructor(private val apiService: GitHubApiService) {
 class GitHubRepository(private val apiService: GitHubApiService) {
