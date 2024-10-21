@@ -45,6 +45,7 @@
             tools:itemCount="10"
             tools:listitem="@layout/item_repository" />
 
+        <!--TexView to show an error-->
         <TextView
             android:id="@+id/textError"
             android:layout_width="match_parent"

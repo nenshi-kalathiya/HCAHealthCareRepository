@@ -45,7 +45,6 @@ class GitHubRepositoryDetailFragment : Fragment() {
     }
 
     private fun bindRepositoryData(repository: RepositoryDataItem) {
-        //here's a direct binding for simplicity
         setDataToView(repository)
         binding.repository = repository
     }

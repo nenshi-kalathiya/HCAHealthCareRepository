@@ -29,7 +29,6 @@ class GitHubRepositoriesAdapter(val onClick: (RepositoryDataItem) -> Unit) : Rec
 
     override fun getItemCount() = repositories.size
 
-    //created view holder class
     inner class RepositoryViewHolder(private val binding: ItemRepositoryBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(repository: RepositoryDataItem) {

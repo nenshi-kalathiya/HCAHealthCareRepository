@@ -8,6 +8,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 
 //useful while you are integrating Dagger
 //class GitHubRepository @Inject constructor(private val apiService: GitHubApiService) {
+
 class GitHubRepository(private val apiService: GitHubApiService) {
 
     fun getRepositories(username: String, perPage: Int, page: Int): Single<List<RepositoryDataItem>> {

@@ -8,14 +8,14 @@ import com.example.hcahealthcaretask.model.RepositoryDataItem
 import com.example.hcahealthcaretask.repository.GitHubRepository
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 
-class GitHubRepositoriesViewModel(private val repository: GitHubRepository) : ViewModel() {
+class GitHubRepositoriesViewModel( val repository: GitHubRepository) : ViewModel() {
 
     //set and update repository list according response
-    private val _repositories = MutableLiveData<List<RepositoryDataItem>>()
+    val _repositories = MutableLiveData<List<RepositoryDataItem>>()
     val repositories: LiveData<List<RepositoryDataItem>> get() = _repositories
 
     //set and update repository list according filter by language
-    private val _filteredRepositories = MutableLiveData<List<RepositoryDataItem>>()
+    val _filteredRepositories = MutableLiveData<List<RepositoryDataItem>>()
     val filteredRepositories: LiveData<List<RepositoryDataItem>> get() = _filteredRepositories
 
     //error handling for No API Call Response
@@ -73,10 +73,10 @@ class GitHubRepositoriesViewModel(private val repository: GitHubRepository) : Vi
     }
 
     fun clearRepositoryList() {
-        _repositories.value = emptyList() // Clear existing data
+        _repositories.value = emptyList() // Clear existing data fetch from response
     }
     fun clearFilteredRepositoryList() {
-        _filteredRepositories.value = emptyList() // Clear existing data
+        _filteredRepositories.value = emptyList() // Clear existing data from list to be filtered
     }
 
     override fun onCleared() {

@@ -1,8 +1,8 @@
 [versions]
 adapterRxjava = "2.0.0-beta2"
-agp = "8.6.0"
+agp = "8.6.1"
 coreTesting = "2.2.0"
-dagger = "2.46.1"
+dagger = "2.48"
 daggerAndroid = "2.48"
 daggerAndroidSupport = "2.48"
 fragmentKtx = "1.8.4"
@@ -17,12 +17,14 @@ kotlinxCoroutinesCore = "1.7.3"
 kotlinxCoroutinesAndroid = "1.7.3"
 lifecycleViewmodelKtx = "2.8.6"
 material = "1.12.0"
-activity = "1.9.2"
+activity = "1.9.3"
 constraintlayout = "2.1.4"
 mockitoCore = "3.11.2"
-mockitoCoreVersion = "3.12.4"
 mockitoInline = "3.12.4"
-mockitoKotlin = "3.2.0"
+mockitoKotlin = "4.1.0"
+mockitoKotlinVersion = "4.1.0"
+moshi = "1.13.0"
+moshiKotlin = "1.13.0"
 navigationFragmentKtx = "2.8.3"
 navigationFragmentKtxVersion = "2.7.1"
 navigationUiKtx = "2.8.3"
@@ -59,6 +61,7 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlinVersion" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
@@ -67,7 +70,10 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
 mockito-kotlin = { module = "org.mockito:mockito-kotlin", version.ref = "mockitoKotlin" }
 mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
-mockito-core-v3124 = { module = "org.mockito:mockito-core", version.ref = "mockitoCoreVersion" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-adapter = { module = "com.squareup.moshi:moshi-adapter", version.ref = "moshi" }
+moshi-kotlin-serialize = { module = "com.squareup.moshi:moshi-kotlin-serialize", version.ref = "moshi" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroid" }

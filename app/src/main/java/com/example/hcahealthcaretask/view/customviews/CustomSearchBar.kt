@@ -58,26 +58,23 @@ class CustomSearchBar @JvmOverloads constructor(
         }
     }
 
-    //  method to set text programmatically
     fun setText(text: String) {
         binding.searchEditText.setText(text)
     }
 
-    //  method to get text
     fun getText(): String {
         return binding.searchEditText.text.toString()
     }
 
-    //  method to set hint programmatically
     fun setHint(hint: String) {
         binding.searchEditText.hint = hint
     }
 
-    //  method to allow fragment to add its own TextWatcher
+    // method to allow fragment to add its own TextWatcher
     fun addTextChangedListener(textWatcher: TextWatcher) {
         binding.searchEditText.addTextChangedListener(textWatcher)
     }
 
-    //pass edit search text for listen to API call
+    // pass edit search text for listen to API call
     fun textEditSearch() : String = binding.searchEditText.text.toString()
 }

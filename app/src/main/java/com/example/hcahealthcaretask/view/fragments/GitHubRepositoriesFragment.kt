@@ -67,7 +67,7 @@ class GitHubRepositoriesFragment : Fragment(R.layout.fragment_repositories) {
     }
 
     private fun setRecyclerview(view: View) {
-        //adapter initialization and onclick item
+        //adapter initialization and onclick item managed
         adapter = GitHubRepositoriesAdapter { repo ->
             val jsonString = Gson().toJson(repo)
             val bundle = Bundle()
